@@ -30,8 +30,8 @@ const HomeModule: React.FC = () => {
   return (
     <Box mt={2}>
       <Grid container spacing={2}>
-        {list?.map((i) => (
-          <Grid item xs={12} md={4}>
+        {list?.map((i, idx) => (
+          <Grid item xs={12} md={4} key={idx}>
             <Card icon={i.icon} title={i.title} />
           </Grid>
         ))}
